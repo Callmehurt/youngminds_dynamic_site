@@ -15,7 +15,7 @@
                 </div>
                 <div class="col-lg-8">
                     <div>
-                    @if(count($headingNews) >=1)
+                    @if(count($headlineNews) >=1)
                         <div class="news-img-wrapper">
                             <button>{{ $headlineNews[0]->topic }}</button>
                             <div class="news_heading">
