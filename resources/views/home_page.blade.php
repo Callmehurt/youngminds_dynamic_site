@@ -15,6 +15,7 @@
                 </div>
                 <div class="col-lg-8">
                     <div>
+                    @if(count($headingNews) >=1)
                         <div class="news-img-wrapper">
                             <button>{{ $headlineNews[0]->topic }}</button>
                             <div class="news_heading">
@@ -30,6 +31,7 @@
                             <span style="position: absolute;font-size: 12px;bottom: 2rem;left: 1rem;color: white">By <strong style="text-transform: uppercase">{{ $headlineNews[0]->name }}</strong> - {{\Carbon\Carbon::parse($headlineNews[0]->created_at)->format('M d, Y')}} </span>
                             <img src="{{ asset('News/'.$headlineNews[0]->image) }}" alt="">
                         </div>
+                        @endif
                     </div>
                 </div>
                 <div class="col-lg-4">
